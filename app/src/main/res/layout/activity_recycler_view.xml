@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecyclerAdminView">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="366dp"
+        android:layout_height="612dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.865" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="157dp"
+        android:layout_height="85dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:contentDescription="@android:string/unknownName"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/baseline_library_add" />
+
+    <ImageView
+        android:id="@+id/empty_imageView"
+        android:layout_width="120dp"
+        android:layout_height="102dp"
+        android:alpha="@dimen/cardview_compat_inset_shadow"
+        android:src="@drawable/baseline_library_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/recyclerview"
+        app:layout_constraintTop_toTopOf="@+id/recyclerview"
+        app:layout_constraintVertical_bias="0.338" />
+
+    <TextView
+        android:id="@+id/no_Data"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="No Book!"
+        android:textColor="@color/material_dynamic_neutral50"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empty_imageView" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="221dp"
+        android:layout_height="58dp"
+        android:ems="10"
+        android:hint="Search here.."
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

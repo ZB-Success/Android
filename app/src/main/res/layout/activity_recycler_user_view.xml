@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RecyclerUserView"
+    android:layout_marginTop="30dp">
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/userRecyclerView"
+        android:layout_width="396dp"
+        android:layout_height="662dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="13dp"
+        android:paddingTop="?attr/actionBarSize"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/searchuser"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:hint="search here.."
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="12dp"
+        android:text=""
+        tools:ignore="HardcodedText,LabelFor" />
+
+
+</RelativeLayout>
